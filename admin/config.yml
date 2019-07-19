@@ -33,5 +33,5 @@ collections:
       - { label: "Navigation Title", name: "navtitle", widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - {label: "Random", name: "description", widget: "text"}
+      - {label: "Random", name: "random", widget: "text"}
 
