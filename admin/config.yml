@@ -1,6 +1,15 @@
+# backend:
+#   name: git-gateway
+
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  name: gitlab
+  branch: master
+  repo: MarCom-Repositories/wateractivity_org # Path to your GitLab repository
+  auth_type: implicit # Required for implicit grant
+  app_id: 9504addf34d595d31113a8ba2d8003871ad6174ce87131b8df52cec3aea7f0ee # Application ID from your GitLab settings
+  api_root: https://gitlab.metergroup.com/api/v4
+  base_url: https://gitlab.metergroup.com
+  auth_endpoint: oauth/authorize
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
